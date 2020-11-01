@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="css/main-gallery.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+  <body>
+    <!--filter buttons -->
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-lg-8 mx-auto d-flex justify-content-between my-2 sortBtn flex-wrap"
+        >
+          <a
+            href="#"
+            class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+            data-filter="all"
+            >
+            all
+          </a>
+          <a
+            href="#"
+            class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+            data-filter="fruits"
+          >
+            Fruits
+          </a>
+          <a
+            href="#"
+            class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+            data-filter="cars"
+          >
+            Cars
+          </a>
+          <a
+            href="#"
+            class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+            data-filter="cities"
+          >
+          Cities
+          </a>
+        </div>
+      </div>
+      <!-- search box -->
+      <div class="row">
+        <div class="col-10 mx-auto col-md-11">
+          <form>
+            <div>
+              <input
+                type="text"
+                class="form-control "
+                placeholder="Please search here..."
+                id="search-item"
+              />
+            </div>
+          </form>
+        </div>
+      <!--end of filter buttons -->
+      <div class="row" class="store-items" id="store-items">
+        <!-- single item -->
+        <div
+          class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cars"
+          data-item="cars"
+        >
+          <div class="card">
+            <div class="img-container">
+              <img
+                src="./img/cars/ferrari.jpg"
+                class="card-img-top store-img"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <div
+                class="card-text d-flex justify-content-between text-capitalize"
+              >
+                <h5>Ferrari</h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div
+          class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cars"
+          data-item="cars"
+        >
+          <div class="card">
+            <div class="img-container">
+              <img
+                src="./img/cars/lamborghini.jpg"
+                class="card-img-top store-img"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <div
+                class="card-text d-flex justify-content-between text-capitalize"
+              >
+                <h5>Lamborghini</h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div
+          class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cars"
+          data-item="cars"
+        >
+          <div class="card">
+            <div class="img-container">
+              <img
+                src="./img/cars/mercedes-benz.jpg"
+                class="card-img-top store-img"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <div
+                class="card-text d-flex justify-content-between text-capitalize"
+              >
+                <h5>Mercedes Benz</h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div
+          class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cars"
+          data-item="cars"
+        >
+          <div class="card">
+            <div class="img-container">
+              <img
+                src="./img/cars/audi.jpg"
+                class="card-img-top store-img"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <div
+                class="card-text d-flex justify-content-between text-capitalize"
+              >
+                <h5>Audi</h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div
+          class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cars"
+          data-item="cars"
+        >
+          <div class="card">
+            <div class="img-container">
+              <img
+                src="./img/cars/bmw.jpg"
+                class="card-img-top store-img"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <div
+                class="card-text d-flex justify-content-between text-capitalize"
+              >
+                <h5>BMW</h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div
+          class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cities"
+          data-item="cities"
+        >
+          <div class="card">
+            <div class="img-container">
+              <img
+                src="./img/citys/dubai.jpg"
+                class="card-img-top store-img"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <div
+                class="card-text d-flex justify-content-between text-capitalize"
+              >
+                <h5>Dubai</h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div
+          class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cities"
+          data-item="cities"
+        >
+          <div class="card">
+            <div class="img-container">
+              <img
+                src="./img/citys/london.jpg"
+                class="card-img-top store-img"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <div
+                class="card-text d-flex justify-content-between text-capitalize"
+              >
+                <h5>London</h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div
+          class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cities"
+          data-item="cities"
+        >
+          <div class="card">
+            <div class="img-container">
+              <img
+                src="./img/citys/new-york.jpg"
+                class="card-img-top store-img"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <div
+                class="card-text d-flex justify-content-between text-capitalize"
+              >
+                <h5>New York</h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div
+          class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cities"
+          data-item="cities"
+        >
+          <div class="card">
+            <div class="img-container">
+              <img
+                src="./img/citys/paris.jpg"
+                class="card-img-top store-img"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <div
+                class="card-text d-flex justify-content-between text-capitalize"
+              >
+                <h5>Paris</h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div
+          class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cities"
+          data-item="cities"
+        >
+          <div class="card">
+            <div class="img-container">
+              <img
+                src="./img/citys/rio-de-janeiro.jpg"
+                class="card-img-top store-img"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <div
+                class="card-text d-flex justify-content-between text-capitalize"
+              >
+                <h5>Rio De Janeiro</h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div
+          class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item fruits"
+          data-item="fruits"
+        >
+          <div class="card">
+            <div class="img-container">
+              <img
+                src="./img/fruits/apple.jpg"
+                class="card-img-top store-img"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <div
+                class="card-text d-flex justify-content-between text-capitalize"
+              >
+                <h5>Apple</h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div
+          class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item fruits"
+          data-item="fruits"
+        >
+          <div class="card">
+            <div class="img-container">
+              <img
+                src="./img/fruits/banana.jpg"
+                class="card-img-top store-img"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <div
+                class="card-text d-flex justify-content-between text-capitalize"
+              >
+                <h5>Banana</h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div
+          class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item fruits"
+          data-item="fruits"
+        >
+          <div class="card">
+            <div class="img-container">
+              <img
+                src="./img/fruits/cherry.jpg"
+                class="card-img-top store-img"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <div
+                class="card-text d-flex justify-content-between text-capitalize"
+              >
+                <h5>Cherry</h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div
+          class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item fruits"
+          data-item="fruits"
+        >
+          <div class="card">
+            <div class="img-container">
+              <img
+                src="./img/fruits/lemon.jpg"
+                class="card-img-top store-img"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <div
+                class="card-text d-flex justify-content-between text-capitalize"
+              >
+                <h5>Lemon</h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div
+          class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item fruits"
+          data-item="fruits"
+        >
+          <div class="card">
+            <div class="img-container">
+              <img
+                src="./img/fruits/orange.jpg"
+                class="card-img-top store-img"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <div
+                class="card-text d-flex justify-content-between text-capitalize"
+              >
+                <h5>Orange</h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+      </div>
+
+      <!-- modal-container -->
+      <div id="container-fluid" class="container-fluid">
+        <div class="row lightbox-container align-items-center">
+          <div class="col-10 col-md-10 mx-auto text-right lightbox-holder">
+            <span class="lightbox-close">&times;</span>
+            <div class="lightbox-item"></div>
+            <span class="lightbox-control btnLeft"></span>
+            <span class="lightbox-control btnRight"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/Tasks/main-gallery.js"></script>
+  </body>
+</html>
